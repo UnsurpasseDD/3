@@ -4,9 +4,9 @@ from celery import shared_task
 from django.contrib.sites.models import Site
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
-from NewsPaper import settings
-from NewsPaper.settings import SITE_URL
-from posts.models import Post, Category
+from NewsPapers.NewsPortal import settings
+from NewsPapers.NewsPortal.settings import SITE_URL
+from .models import Post, Category
 
 
 @shared_task
